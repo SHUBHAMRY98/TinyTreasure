@@ -1,0 +1,342 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiny Treasure</title>
+
+  <!-- ✅ Slick Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <link rel="stylesheet" href="style.css">
+
+<style>
+
+/* RESET */
+
+
+
+/* ABOUT SECTION */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr;
+  gap:40px;
+  align-items:center;
+      justify-items: end;
+}
+.about-text h3{
+  font-size:30px;
+  margin-bottom:10px;
+}
+.about-text p{
+  margin-bottom:12px;
+  color:#555;
+  line-height:1.6;
+}
+
+
+
+/* WHY CHOOSE SECTION */
+.why-choose{
+  margin-top:60px;
+  padding:50px;
+  background:#fafafa;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.05);
+}
+.why-choose h3{
+  font-size:28px;
+  margin-bottom:20px;
+  text-align:center;
+}
+.choose-list li{
+  padding:10px 0;
+  font-size:16px;
+  color:#444;
+}
+
+/* VISION SECTION */
+.vision-mission{
+  margin-top:40px;
+}
+.vision-quote{
+  font-style:italic;
+  background:#e6fcfa;
+  padding:20px;
+  border-left:5px solid #4ecdc4;
+  border-radius:5px;
+  margin:20px 0;
+}
+.values-list p{
+  margin-bottom:10px;
+  color:#555;
+}
+
+
+/* RESPONSIVE */
+@media(max-width:900px){
+ 
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+<!-- ✅ TOPBAR -->
+<div class="header-bg">
+  <div class="topbar-slider topbar-container">
+      <div class="item">COD Available at Rs 60/-</div>
+      <div class="item">Fast Delivery Across India</div>
+      <div class="item">New Stock Updated Daily</div>
+  </div>
+</div>
+
+<!-- ✅ HEADER -->
+<header>
+  <div class="header-container">
+
+<a href="index.html"><img src="img/Logo-colour.avif" alt="Logo" height="55"></a>
+
+    <!-- ✅ Desktop Menu -->
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="collection.html">Our Collections</a>
+      <a href="corporate.html">Corporate Gifting</a>
+      <a href="enquiry.html">Shop/Enquiry</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="nav-main">
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+
+      <!-- ✅ Hamburger -->
+      <button id="menuBtn" class="hamburger">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+      </button>
+    </div>
+
+  </div>
+
+
+  
+  <div id="mobileMenu"></div>
+
+</header>
+
+
+
+
+
+
+<!-- ✅ BANNER -->
+<div class="page-banner ">
+    <div class="container">
+        <h2>About Tiny Treasure</h2>
+        <p>Welcome to Tiny Treasure, your one-stop destination for unique, thoughtful, and high-quality products.</p>
+    </div>
+</div>
+
+
+
+<!-- ✅ ABOUT SECTION -->
+<section id="about-full" class="about-full container section-padding">
+
+    <div class="about-grid">
+        <div class="about-text">
+            <h3>Welcome to Tiny Treasure</h3>
+            <p>At Tiny Treasure, we believe in blending <strong>quality, affordability, and
+uniqueness</strong>. whether you’re looking for the perfect gift, stylish crockery, or reliable
+refurbished laptops.</p>
+
+            <h4 class="mt-4">Meet the Founder:</h4>
+            <p>Founded by <strong>Gunjan</strong>, a professional with <strong>14 years of rich experience in the HR industry
+and 4 years of expertise in nurturing startups</strong>, Tiny Treasure is built on a strong
+foundation of trust, creativity, and innovation. Gunjan’s vision is to create a brand that
+caters to families, corporates, and individuals with <strong>exclusive products ranging from
+kids’ stationery to household essentials and beyond</strong>.
+</p>
+
+
+        </div>
+
+        <div class="founder-image">
+            <img src="img/cat1.avif">
+        </div>
+    </div>
+
+
+    <!-- ✅ WHY CHOOSE SECTION -->
+    <div class="why-choose" data-aos="fade-up">
+        <h3>Why Choose Tiny Treasure?</h3>
+        <ul class="choose-list">
+          <li> <strong>✔</strong> 14+ Years of Industry Experience</li>
+          <li><strong>✔</strong> Wide Product Portfolio for Kids, Homes & Corporates</li>
+          <li><strong>✔</strong> Personalized & Customized Gifting Solutions</li>
+          <li><strong>✔</strong> Affordable, Durable, and Stylish Products</li>
+          <li><strong>✔</strong> Customer-First Approach with After-Sales Support</li>
+        </ul>
+    </div>
+
+
+    <div class="vision-mission">
+        <h3>Our Brand Mission</h3>
+        <blockquote class="vision-quote">
+            "At Tiny Treasure, our mission is to bring joy, creativity, and convenience into everyday living by offering thoughtfully curated, high-quality, and affordable products for kids, homes, and businesses. We strive to deliver personalized gifting, reliable refurbished technology, and lifestyle essentials that enrich experiences, strengthen relationships, and add value to modern families and organizations."
+        </blockquote>
+    </div>
+
+
+        <div class="vision-mission">
+        <h3>Our Brand Vision</h3>
+        <blockquote class="vision-quote">
+            "Our vision is to become India’s most trusted destination for unique lifestyle products, customized gifting, and smart solutions — a brand known for creativity, reliability, and customer delight. We aim to inspire moments of happiness, support Indian craftsmanship, and make quality products accessible to everyone, from children to corporates."
+        </blockquote>
+    </div>
+
+</section>
+
+
+
+
+
+
+<!-- ✅ FOOTER -->
+<section>
+  <div class="footer-main">
+    <div class="footer">
+
+      <div class="footer-ch">
+        <img src="img/Logo-colour.avif" alt="footer-logo"/>
+        <div class="footer-about">
+        <span>Welcome to Tiny Treasure, your one-stop destination for unique products.</span>
+        <span>Affordable & premium gifting, crockery, kids items and more.</span>
+        </div>
+      </div>
+
+      <div class="footer-ch">
+        <p>Links</p>
+        <div class="main-link">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul>
+            <li><a href="enquiry.html">Shop/Enquiry</a></li>
+            <li><a href="collection.html">Our Collections</a></li>
+            <li><a href="corporate.html">Corporate Gifting</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-ch">
+        <p>Reach Us</p>
+        <div class="contact"><span>Address:</span> 503 Noida Sector-5</div>
+        <div class="contact"><a href="tel:98765434210"><span>Phone:</span> 98765434210</a></div>
+        <div class="contact"><a href="mailto:abc@gmail.com"><span>E-Mail:</span> abc@gmail.com</a></div>
+      </div>
+
+      <div class="footer-ch">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m12..."
+                width="100%" height="200" style="border:0; border-radius:6px;"></iframe>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom-main">
+    <div class="footer-bottom">
+      <div class="footer-bottom-left"><p>Copyright © 2025 Tiny Treasure</p></div>
+      <div class="footer-bottom-right">
+        <ul>
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ✅ JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+
+
+<script>
+
+/* ✅ SYNC DESKTOP MENU TO MOBILE MENU */
+
+
+/* ✅ Copy Desktop Menu → Mobile Menu */
+const desktopMenu = document.querySelector(".desktop-nav");
+document.getElementById("mobileMenu").innerHTML = desktopMenu.innerHTML;
+
+/* ✅ Hamburger Logic */
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+
+function openMenu(){
+    mobileMenu.classList.add("open");
+    document.body.classList.add("menu-active");
+    menuBtn.classList.add("active");
+}
+
+function closeMenu(){
+    mobileMenu.classList.remove("open");
+    document.body.classList.remove("menu-active");
+    menuBtn.classList.remove("active");
+}
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.contains("open") ? closeMenu() : openMenu();
+});
+
+
+/* ✅ Auto close on desktop */
+window.addEventListener("resize", () => {
+  if(window.innerWidth > 768){ closeMenu(); }
+});
+
+/* ✅ TOPBAR SLIDER */
+$('.topbar-slider').slick({
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 2500,
+  infinite: true,
+  speed: 500,
+});
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

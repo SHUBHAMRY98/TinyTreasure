@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiny Treasure</title>
+
+  <!-- ✅ Slick Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+     /* ---------- FLOATING WHATSAPP BUTTON ---------- */
+    .wa-floating{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:9999;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      align-items:flex-end;
+    }
+
+    .wa-btn{
+      background:transparent;
+      border:none;
+      cursor:pointer;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding:6px 10px;
+      border-radius:999px;
+      box-shadow:0 6px 18px rgba(27, 94, 32, 0.18);
+      transition:transform .15s ease,opacity .15s ease;
+      backdrop-filter: blur(4px);
+    }
+
+    .wa-btn:active{transform:scale(.98)}
+
+    /* The image-only circular primary button */
+    .wa-main-btn{
+      width:56px;height:56px;padding:6px;border-radius:50%;overflow:hidden;background:white;display:inline-flex;align-items:center;justify-content:center
+    }
+    .wa-main-btn img{width:100%;height:100%;object-fit:contain;display:block}
+
+   
+
+    /* menu that expands when clicked */
+    .wa-menu{
+      display:flex;flex-direction:column;align-items:flex-end;gap:8px;opacity:0;transform:translateY(8px) scale(.98);pointer-events:none;transition:.18s ease;
+    }
+    .wa-menu.open{opacity:1;transform:none;pointer-events:auto}
+
+    .wa-item{background:#fff;padding:10px 12px;border-radius:12px;min-width:220px;display:flex;gap:10px;align-items:center;box-shadow:0 6px 20px rgba(16,24,40,0.06)}
+    .wa-item img{width:36px;height:36px;border-radius:8px;object-fit:cover}
+    .wa-item .meta{display:flex;flex-direction:column}
+    .wa-item .meta .title{font-weight:700}
+    .wa-item .meta .sub{font-size:13px;color:#666}
+
+    /* small helper footer inside widget */
+    .wa-footer{font-size:12px;color:#666;padding:6px 10px;background:transparent}
+
+    /* responsive tweaks */
+    @media (max-width:520px){
+      .wa-item{min-width:180px}
+    }
+
+    /* demo page content */
+    .demo{
+      max-width:900px;margin:36px auto;padding:20px;background:#fff;border-radius:12px;box-shadow:0 8px 40px rgba(2,6,23,0.04)
+    }
+    .demo h1{font-size:20px;margin-bottom:10px}
+    .demo p{color:#444}
+  </style>
+
+</head>
+<body>
+
+
+<!-- ✅ TOPBAR -->
+<div class="header-bg">
+  <div class="topbar-slider topbar-container">
+      <div class="item">COD Available at Rs 60/-</div>
+      <div class="item">Fast Delivery Across India</div>
+      <div class="item">New Stock Updated Daily</div>
+  </div>
+</div>
+
+<!-- ✅ HEADER -->
+<header>
+  <div class="header-container">
+<a href="index.html"><img src="img/Logo-colour.avif" alt="Logo" height="55"></a>
+
+    <!-- ✅ Desktop Menu -->
+    <nav class="desktop-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="collection.html">Our Collections</a>
+      <a href="corporate.html">Corporate Gifting</a>
+      <a href="enquiry.html">Shop/Enquiry</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="nav-main">
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+
+      <!-- ✅ Hamburger -->
+      <button id="menuBtn" class="hamburger">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+      </button>
+    </div>
+
+  </div>
+
+
+  
+  <div id="mobileMenu"></div>
+
+</header>
+
+
+
+
+
+
+<!-- ✅ HERO SLIDER -->
+<div class="hero-slider">
+  <div><img src="img/abc.jpg"></div>
+  <div><img src="img/bcd.jpg"></div>
+  <div><img src="img/cute_N_chic.webp"></div>
+  <div><img src="img/Sale_banner_1.webp"></div>
+  <div><img src="img/WhatsApp_Image_2025-10-13_at_17.12.30.webp"></div>
+</div>
+
+
+
+<!-- ✅ SHOP BY CATEGORY -->
+<section>
+ <div class="main-container">
+ <div class="sub-heading">Shop By Categories</div>
+
+ <div class="shop-cat">
+
+  <div class="cat-type"><a href="#"><img src="img/cat1.avif"><span>Kids’ Unique Stationery & Gifting</span></a></div>
+  <div class="cat-type"><a href="#"><img src="img/cat2.avif"><span>Household Products</span></a></div>
+  <div class="cat-type"><a href="#"><img src="img/cat3.avif"><span>Corporate Gifting</span></a></div>
+  <div class="cat-type"><a href="#"><img src="img/cat4.avif"><span>Customized Kids’ Gift Items</span></a></div>
+  <div class="cat-type"><a href="#"><img src="img/cat1.avif"><span>Crockery</span></a></div>
+  <div class="cat-type"><a href="#"><img src="img/cat2.avif"><span>Handlooms</span></a></div>
+
+ </div>
+</div>
+</section>
+
+
+<!-- ✅ SHOP OUR REELS -->
+<section>
+  <div class="main-container">
+    <div class="sub-heading">Shop Our Reels</div>
+
+<div class="three-slider">
+  <div class="reels"><img src="img/abc.jpg"></div>
+  <div class="reels"><img src="img/bcd.jpg"></div>
+  <div class="reels"><img src="img/cute_N_chic.webp"></div>
+  <div class="reels"><img src="img/Sale_banner_1.webp"></div>
+  <div class="reels"><img src="img/WhatsApp_Image_2025-10-13_at_17.12.30.webp"></div>
+</div>
+
+</div>
+</section>
+
+
+<!-- ✅ SHOP BY AGE -->
+<section>
+ <div class="main-container">
+ <div class="sub-heading">Shop By Age</div>
+
+<div class="shop-cat fourth-slider">
+  <div class="cat-type"><a href="#"><img src="img/age1.webp"><span>0 - 1 Year Collections</span></a></div>
+  <div class="cat-type"><a href="#"><img src="img/age2.webp"><span>0 - 1 Year Collections</span></a></div>
+  <div class="cat-type"><a href="#"><img src="img/age3.webp"><span>0 - 1 Year Collections</span></a></div>
+  <div class="cat-type"><a href="#"><img src="img/age4.webp"><span>0 - 1 Year Collections</span></a></div>
+  <div class="cat-type"><a href="#"><img src="img/age5.webp"><span>0 - 1 Year Collections</span></a></div>
+  <div class="cat-type"><a href="#"><img src="img/age6.webp"><span>0 - 1 Year Collections</span></a></div>
+</div>
+
+</div>
+</section>
+
+
+
+<!-- ========== FLOATING ACTIONS- Whatapp & Call Integration ========== -->
+<div class="wa-floating" aria-live="polite">
+
+    <!-- expandable menu -->
+    <div id="waMenu" class="wa-menu" aria-hidden="true">
+      <!-- Example contact item 1 -->
+      <button class="wa-item" data-phone="+911234567890" data-default-message="Hi, I have a question about your services." onclick="startChat(event)">
+        <img src="assets/agent1.png" alt="Agent 1" />
+        <div class="meta">
+          <span class="title">Support - Priya</span>
+          <span class="sub">Usually replies within 1 hour</span>
+        </div>
+      </button>
+
+      <!-- Example contact item 2 -->
+      <button class="wa-item" data-phone="+919876543210" data-default-message="Hello, I'd like to order." onclick="startChat(event)">
+        <img src="assets/agent2.png" alt="Agent 2" />
+        <div class="meta">
+          <span class="title">Sales - Rahul</span>
+          <span class="sub">Mon–Sat, 9:00–18:00</span>
+        </div>
+      </button>
+
+      <!-- Demo quick action: group invite (opens group link) -->
+      <a class="wa-item" href="https://chat.whatsapp.com/your-group-invite" target="_blank" rel="noopener noreferrer">
+        <img src="assets/group.png" alt="Group" />
+        <div class="meta">
+          <span class="title">Join our Group</span>
+          <span class="sub">Community updates & offers</span>
+        </div>
+      </a>
+
+      <div class="wa-footer">Tap a contact to open WhatsApp</div>
+    </div>
+
+    <!-- main button: image-only circular button -->
+    <button id="waToggle" class="wa-btn wa-main-btn" aria-expanded="false" aria-controls="waMenu">
+      <!-- Replace this image with your PNG/JPG WhatsApp icon (not SVG) -->
+      <img src="img/whatpp.png" alt="WhatsApp" />
+    </button>
+
+
+  </div>
+
+
+<!-- ========== FLOATING ACTIONS- Whatapp & Call Integration  end ========== -->
+
+
+
+<!-- ✅ FOOTER -->
+<section>
+  <div class="footer-main">
+    <div class="footer">
+
+      <div class="footer-ch">
+        <img src="img/Logo-colour.avif" alt="footer-logo"/>
+        <div class="footer-about">
+        <span>Welcome to Tiny Treasure, your one-stop destination for unique products.</span>
+        <span>Affordable & premium gifting, crockery, kids items and more.</span>
+        </div>
+      </div>
+
+      <div class="footer-ch">
+        <p>Links</p>
+        <div class="main-link">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">Shop/Enquiry</a></li>
+            <li><a href="#">Our Collections</a></li>
+            <li><a href="#">Corporate Gifting</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-ch">
+        <p>Reach Us</p>
+        <div class="contact"><span>Address:</span> 503 Noida Sector-5</div>
+        <div class="contact"><a href="tel:98765434210"><span>Phone:</span> 98765434210</a></div>
+        <div class="contact"><a href="mailto:abc@gmail.com"><span>E-Mail:</span> abc@gmail.com</a></div>
+      </div>
+
+      <div class="footer-ch">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m12..."
+                width="100%" height="200" style="border:0; border-radius:6px;"></iframe>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-bottom-main">
+    <div class="footer-bottom">
+      <div class="footer-bottom-left"><p>Copyright © 2025 Tiny Treasure</p></div>
+      <div class="footer-bottom-right">
+        <ul>
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-youtube"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ✅ JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+
+
+<script>
+
+/* ✅ SYNC DESKTOP MENU TO MOBILE MENU */
+
+
+/* ✅ Copy Desktop Menu → Mobile Menu */
+const desktopMenu = document.querySelector(".desktop-nav");
+document.getElementById("mobileMenu").innerHTML = desktopMenu.innerHTML;
+
+/* ✅ Hamburger Logic */
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+
+function openMenu(){
+    mobileMenu.classList.add("open");
+    document.body.classList.add("menu-active");
+    menuBtn.classList.add("active");
+}
+
+function closeMenu(){
+    mobileMenu.classList.remove("open");
+    document.body.classList.remove("menu-active");
+    menuBtn.classList.remove("active");
+}
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.contains("open") ? closeMenu() : openMenu();
+});
+
+
+/* ✅ Auto close on desktop */
+window.addEventListener("resize", () => {
+  if(window.innerWidth > 768){ closeMenu(); }
+});
+
+/* ✅ TOPBAR SLIDER */
+$('.topbar-slider').slick({
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 2500,
+  infinite: true,
+  speed: 500,
+});
+
+/* ✅ HERO SLIDER */
+$('.hero-slider').slick({
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  fade: true,
+  cssEase: 'linear',
+  infinite: true,
+  speed: 800,
+  dots: true
+});
+
+/* ✅ THREE SLIDER */
+$('.three-slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  infinite: true,
+  speed: 600,
+  responsive:[
+    { breakpoint: 992, settings:{ slidesToShow:2 }},
+    { breakpoint: 600, settings:{ slidesToShow:1 }},
+  ]
+});
+
+/* ✅ FOURTH SLIDER */
+$('.fourth-slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  arrows: true,
+  autoplay: false,
+  infinite: true,
+  speed: 600,
+  responsive:[
+    { breakpoint: 992, settings:{ slidesToShow:2 }},
+    { breakpoint: 600, settings:{ slidesToShow:1 }},
+  ]
+});
+
+</script>
+
+
+<script>
+/* --------- CONFIG: update these values --------- */
+const config = {
+phoneNumber: '+911234567890', // E.164 format: +<countrycode><number> (replace)
+defaultMessage: 'Hi! I would like to know more about your services.',
+showCall: true, // show call button
+showWhatsApp: true, // show WhatsApp button
+callLinkPrefix: 'tel:'
+};
+
+
+// build WhatsApp URL depending on environment (mobile vs desktop)
+function getWhatsAppUrl(phone, message){
+const encoded = encodeURIComponent(message || '');
+const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+// use wa.me for mobile and web.whatsapp.com for desktop fallback
+if(isMobile){
+return `https://wa.me/${phone.replace(/\D/g,'')}?text=${encoded}`;
+}
+return `https://web.whatsapp.com/send?phone=${phone.replace(/\D/g,'')}&text=${encoded}`;
+}
+
+
+// Elements
+const waBtn = document.getElementById('wa-btn');
+const callBtn = document.getElementById('call-btn');
+
+
+// Apply visibility / hrefs
+if(config.showWhatsApp){
+waBtn.href = getWhatsAppUrl(config.phoneNumber, config.defaultMessage);
+// open in new window/tab
+waBtn.target = '_blank';
+waBtn.rel = 'noopener noreferrer';
+} else {
+waBtn.style.display = 'none';
+}
+
+
+if(config.showCall){
+callBtn.href = `${config.callLinkPrefix}${config.phoneNumber}`;
+} else {
+callBtn.style.display = 'none';
+}
+
+
+// OPTIONAL: track click events (example)
+waBtn.addEventListener('click', function(){
+try{ if(window.dataLayer) window.dataLayer.push({event:'wa_click'}); }catch(e){}
+});
+callBtn.addEventListener('click', function(){
+try{ if(window.dataLayer) window.dataLayer.push({event:'call_click'}); }catch(e){}
+});
+
+
+// Accessibility: support keyboard "Enter" on anchors with role=button
+[waBtn, callBtn].forEach(btn => {
+btn.addEventListener('keydown', (e) => {
+if(e.key === 'Enter' || e.key === ' '){
+btn.click();
+e.preventDefault();
+}
+});
+});
+</script>
+
+
+<script>
+    // ---------- CONFIG ----------
+    // Replace with your own phone, messages, and assets. Use E.164 phone format for international numbers.
+    const CONFIG = {
+      defaultPhone: '+911234567890',
+      defaultMessage: 'Hello! I found you on the website and would like to know more.',
+      openLabel: true // show small "Chat with us" label
+    }
+
+    const waToggle = document.getElementById('waToggle')
+    const waMenu = document.getElementById('waMenu')
+
+    
+    // toggle menu
+    waToggle.addEventListener('click', function (e) {
+      const open = waMenu.classList.toggle('open')
+      waMenu.setAttribute('aria-hidden', !open)
+      waToggle.setAttribute('aria-expanded', open)
+      // optionally change button appearance when open
+      if (open) waToggle.style.transform = 'rotate(20deg)'
+      else waToggle.style.transform = ''
+    })
+
+    // close menu on outside click
+    document.addEventListener('click', function (e) {
+      if (!waToggle.contains(e.target) && !waMenu.contains(e.target)) {
+        waMenu.classList.remove('open')
+        waMenu.setAttribute('aria-hidden', true)
+        waToggle.setAttribute('aria-expanded', false)
+        waToggle.style.transform = ''
+      }
+    })
+
+    // open WhatsApp chat - supports mobile & desktop
+    function startChat(e) {
+      // get button (works if clicked child element)
+      const btn = e.currentTarget || e.target.closest('.wa-item')
+      const phone = btn.getAttribute('data-phone') || CONFIG.defaultPhone
+      const message = encodeURIComponent(btn.getAttribute('data-default-message') || CONFIG.defaultMessage)
+
+      // WhatsApp deep link
+      const waLink = `https://wa.me/${phone.replace(/[^0-9]/g,'')}?text=${message}`
+
+      // open in new tab/window
+      window.open(waLink, '_blank')
+    }
+
+    // optional: open default chat when user long-presses main button (mobile friendly)
+    let pressTimer = null
+    waToggle.addEventListener('touchstart', function (e) {
+      pressTimer = setTimeout(() => {
+        // long press -> open default chat
+        const link = `https://wa.me/${CONFIG.defaultPhone.replace(/[^0-9]/g,'')}?text=${encodeURIComponent(CONFIG.defaultMessage)}`
+        window.open(link, '_blank')
+      }, 600)
+    })
+    waToggle.addEventListener('touchend', () => clearTimeout(pressTimer))
+    waToggle.addEventListener('touchmove', () => clearTimeout(pressTimer))
+
+    // keyboard accessibility: Enter/Space toggles
+    waToggle.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault(); waToggle.click()
+      }
+    })
+
+  </script>
+
+</body>
+</html>
