@@ -237,12 +237,14 @@ header.sticky-active {
 }
 
 /* ✅ Disable background click + blur */
-body.menu-active .header-container,
-body.menu-active .hero-slider,
-body.menu-active section,
-body.menu-active footer {
-    pointer-events: none;
+@supports (-webkit-touch-callout: none) {
+  body.menu-active .header-container,
+  body.menu-active .hero-slider,
+  body.menu-active section,
+  body.menu-active footer {
+     pointer-events: none;
     filter: blur(1px);
+  }
 }
 
 body.menu-active #mobileMenu,
