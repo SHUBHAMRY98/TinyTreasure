@@ -1,6 +1,6 @@
 /* General Styling & Font Setup */
 :root {
-    --color-primary: #4ECDC4; /* Light Teal/Mint - Trustworthy, Cheerful */
+    --color-primary: #067780; /* Light Teal/Mint - Trustworthy, Cheerful */
     --color-secondary: #FF6B6B; /* Coral/Salmon - CTA/Action */
     --color-text-dark: #333333;
     --color-text-light: #666666;
@@ -89,7 +89,7 @@ a:hover {
 /* --- Global Elements (Top Bar, Header, Footer) --- */
  * { margin:0; padding:0; box-sizing:border-box; font-family:Arial, sans-serif; }
 
-    .header-bg { background:#4eCDC4; color:white; padding:6px 0; }
+    .header-bg { background:#067780; color:white; padding:6px 0; }
 
     a, a span{
       list-style: none;
@@ -746,7 +746,7 @@ body.menu-active #menuBtn {
     background-color: var(--color-primary);
     /* Individual icon color placeholders */
 }
-.category-detail-item .stationery-icon { background-color: #4ECDC4; }
+.category-detail-item .stationery-icon { background-color: #067780; }
 .category-detail-item .customized-icon { background-color: #FF6B6B; }
 .category-detail-item .household-icon { background-color: #A799FF; }
 .category-detail-item .corporate-icon { background-color: #6A0572; }
@@ -976,7 +976,7 @@ body.menu-active #menuBtn {
   left: 50%;
   transform: translateX(-50%);
   width: 4px;
-  background: #4ecdc4;
+  background: #067780;
   border-radius: 3px;
 }
 
@@ -1009,7 +1009,7 @@ body.menu-active #menuBtn {
 
     .branch-content h2 {
       font-size: 1.3rem;
-      color: #4ecdc4;
+      color: #067780;
       margin-bottom: 10px;
       position: relative;
       cursor: pointer;
@@ -1022,7 +1022,7 @@ body.menu-active #menuBtn {
   bottom: 120%;
   left: 50%;
   transform: translateX(-50%) scale(0.9);
-  background: #4ecdc4;
+  background: #067780;
   color: #fff;
   padding: 8px 12px;
   border-radius: 8px;
@@ -1072,7 +1072,7 @@ body.menu-active #menuBtn {
       transform: translate(-50%, -50%);
       width: 22px;
       height: 22px;
-      background: #4ecdc4;
+      background: #067780;
       border: 4px solid #d8eedc;
       border-radius: 50%;
       z-index: 10;
