@@ -697,7 +697,7 @@ body.menu-active #menuBtn {
     align-items: flex-start;
 }
 .founder-image {
-    width: 350px;
+    /* width: 350px; */
     height: 350px;
     border-radius: 10px; 
     display: flex;
