@@ -29,18 +29,87 @@
 <!-- ✅ HEADER -->
 <header>
   <div class="header-container">
-
 <a href="index.html"><img src="img/logo-bgr.png" alt="Logo" height="55"></a>
 
-    <!-- ✅ Desktop Menu -->
-    <nav class="desktop-nav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="collection.html">Our Collections</a>
-      <a href="corporate.html">Corporate Gifting</a>
-      <a href="enquiry.html">Shop/Enquiry</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
+
+     <nav class="desktop-nav">
+
+  <div class="nav-top">
+    <a href="index.php"><img src="assets/img/logo-bgr.png" alt="Logo" height="55"></a>
+  </div>
+
+  <a href="index.php">Home</a>
+  <a href="about.php">About Us</a>
+
+  <!-- 🔽 Dropdown -->
+  <!-- <div class="dropdown">
+    <a href="" class="drop-btn">Our Collections</a>
+    <div class="dropdown-content">
+      <a href="soft-toys.php">Kids Collection</a>
+      <a href="return-gifts.php">General Items</a>
+    </div>
+  </div> -->
+
+  <div class="dropdown">
+  <a href="#" class="drop-btn">Our Collections<span>▼</span></a>
+  <div class="dropdown-content">
+
+    <!-- ⭐ Kids Collection with Submenu -->
+    <div class="sub-dropdown">
+      <a href="soft-toys.php" class="sub-btn">Kids Collection ▸</a>
+      <div class="sub-dropdown-content">
+        <a href="<?= BASE_URL ?>our-collections/kids-collection.php">Lamps</a>
+              <a href="<?= BASE_URL ?>our-collections/kids-collection.php">Toys/Games</a>
+              <a href="<?= BASE_URL ?>our-collections/kids-collection.php">Craft Items</a>
+              <a href="<?= BASE_URL ?>our-collections/kids-collection.php">Glow Blankets</a>
+              <a href="<?= BASE_URL ?>our-collections/kids-collection.php">Piggy Banks</a>
+              <a href="<?= BASE_URL ?>our-collections/kids-collection.php">Harry Potter Products</a>
+              <a href="<?= BASE_URL ?>our-collections/kids-collection.php">Travel Bag/Lunch Bag</a>
+            
+      </div>
+    </div>
+
+    <div class="sub-dropdown">
+      <a href="soft-toys.php" class="sub-btn">Essential Items ▸</a>
+      <div class="sub-dropdown-content">
+       <a href="<?= BASE_URL ?>our-collections/kids-collection.php">School Bags</a>
+              <a href="<?= BASE_URL ?>our-collections/kids-collection.php">Fancy Pen/Pencils</a>
+              <a href="<?= BASE_URL ?>our-collections/kids-collection.php">Eraser/Sharpner</a>
+              <a href="<?= BASE_URL ?>our-collections/kids-collection.php">Lunch Box</a>
+              <a href="<?= BASE_URL ?>our-collections/kids-collection.php">Sippers/Bottles</a>
+              <a href="<?= BASE_URL ?>our-collections/kids-collection.php">Stationary Items</a>
+              <a href="<?= BASE_URL ?>our-collections/kids-collection.php">New Arrival</a>
+               <a href="<?= BASE_URL ?>our-collections/kids-collection.php">Treanding items</a>
+           
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+    <div class="dropdown">
+     <a href="" class="drop-btn">Customized Gifts<span>▼</span></a>
+     <div class="dropdown-content">
+      <a href="soft-toys.php">Corporate Gifting</a>
+      <a href="return-gifts.php">Kids Gifting</a>
+     </div>
+  </div>
+
+      <div class="dropdown">
+        <a href="" class="drop-btn">Household & Utility<span>▼</span></a>
+        <div class="dropdown-content">
+         <a href="soft-toys.php">Organiser</a>
+        <a href="return-gifts.php">Crockery</a>
+        <a href="soft-toys.php">Handlooms</a>
+        <a href="return-gifts.php">Decore Items</a>
+       </div>
+     </div>
+
+  <a href="enquiry.php">Shop/Enquiry</a>
+  <a href="contact.php">Contact Us</a>
+</nav>
+
 
     <div class="nav-main">
       <div class="icons">
