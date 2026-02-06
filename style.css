@@ -160,7 +160,7 @@ header.sticky-active {
     .header-container{ max-width:1300px; margin:auto; padding:15px; display:flex; justify-content:space-between; align-items:center; border-bottom: 1px solid #252525;} 
     /* Desktop Nav */ 
     nav.desktop-nav { display:flex; gap:25px; } 
-    nav.desktop-nav a, nav.desktop-nav button { text-decoration:none; color:#444; font-size:15px; background:none; border:none; cursor:pointer; } 
+    nav.desktop-nav a, nav.desktop-nav button { text-decoration:none; color:#444; font-size:15px; background:none;  cursor:pointer; } 
     nav.desktop-nav a:hover, nav.desktop-nav button:hover { color:#0aa7a7; } 
     /* Dropdown */ 
     .dropdown { position:relative; } 
@@ -244,6 +244,7 @@ header.sticky-active {
   padding: 8px;
   text-decoration: none;
   color: #000;
+    border-bottom: 0.5px solid #444;
 }
 
 .dropdown-content a:hover,
